@@ -29,7 +29,6 @@ CREATE TABLE courses (
   description TEXT
 );
 
-
 CREATE TABLE sections (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   time TEXT,
@@ -39,6 +38,6 @@ CREATE TABLE sections (
 
 CREATE TABLE enrollments (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  student_id INTEGER,
-  section_id INTEGER
+  section_id INTEGER,
+  student_id INTEGER
 );
